@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/"): div(class="goback") INICIO
+  form(action="/conjunto", method="post")
+    input(type='text', name='conjuntoA', placeholder="Ingrese los valores del conjunto A")
+    input(type='text', name='conjuntoB', placeholder="Ingrese los valores del conjunto B")
+    br
+    button(type="submit") Resultado
+  
+  h2 El resultado es:
+    h3 El conjunto A es: #{arrayA}
+    h3 El conjunto B es: #{arrayB}
+  ul
+    li El resultado de la Union es: #{resUnion}
+    li El resultado de la Interseccion es: #{resIntersect}
+    li El resultado de la Diferencia es: #{resDiference}

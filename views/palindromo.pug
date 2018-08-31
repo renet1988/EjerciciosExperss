@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/"): div(class="goback") INICIO
+  form(action="/palindromo", method="post")
+    input(type='text', name='text', placeholder="Ingrese un texto")
+    br
+    button(type="submit") Resultado
+  - var pal = "SI es un palindromo"
+  - var nopal = "NO es un palindromo" 
+  if resultado
+    h2 El texto "#{textoRes}" #{pal}
+  else
+    h2 El texto "#{textoRes}" #{nopal}

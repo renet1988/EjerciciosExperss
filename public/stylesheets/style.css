@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h1{
+  text-align: center;
+  border: 1px solid;
+  font-size: xx-large;
+  background-color: #BBD8DC;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+div{
+  border: black 1px solid;
+  text-decoration: white;
+  margin: 2px;
+  text-align: center;
+}
+.badge {
+  font-size: medium;
+  color: white;
+  padding: 0.8em 0.7em 0.1em 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.badge:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.badge li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.goback{
+  background-color: black;
+  padding: 0.8em 0.7em 0.1em 0.7em;
+  line-height: 1em;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+  width: 10em;
+}
+input{
+  width:350px;
+  height:50px
+}
+button{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}

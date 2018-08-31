@@ -1,0 +1,11 @@
+//extends layout
+
+//block content
+  h1= title
+  a(href="/"): div(class="goback") INICIO
+  form(action="/compleja", method="post")
+    input(type='text', name='texto', placeholder="Ingrese un la expresion a evaluar")
+    br
+    button(type="submit") Resultado
+  
+  h2 El resultado de la expresion "#{cadena}" es: #{resultado}

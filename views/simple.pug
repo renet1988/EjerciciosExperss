@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/"): div(class="goback") INICIO
+  form(action="/simple", method="post")
+    input(type='text', name='text1', placeholder="Ingrese un Numero")
+    input(type='text', name='text2', placeholder="Ingrese un Operador")
+    input(type='text', name='text3', placeholder="Ingrese un Numero")
+    br
+    button(type="submit") Resultado
+  
+  h2 El resultado es: #{resultado}

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/"): div(class="goback") INICIO
+  form(action="/fibonacci", method="post")
+    input(type='number', name='number', placeholder="Ejemplo 12")
+    br
+    button(type="submit") Resultado
+  
+  h3 El resultado es: #{fiboNumber}
